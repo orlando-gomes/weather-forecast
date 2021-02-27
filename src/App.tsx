@@ -1,9 +1,18 @@
 import * as React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppProvider from './contexts';
+
+import GlobalStyle from './styles/global';
+import Routes from './routes';
 
 const App: React.FC = () => (
-  <div className="App">
-    <h1>Weather Forecast</h1>
-  </div>
+  <BrowserRouter>
+    <AppProvider>
+      <Routes />
+    </AppProvider>
+
+    <GlobalStyle />
+  </BrowserRouter>
 );
 
 export default App;
