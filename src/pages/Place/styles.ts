@@ -50,7 +50,7 @@ export const Title = styled.div`
 
 export const ForecastBoard = styled.div<ForecastBoardProps>`
   width: 504px;
-  height: 308px;
+  min-height: 290px;
   margin: 36px 0 0;
   border-radius: 4px;
   padding: 24px 52px;
@@ -64,9 +64,9 @@ export const ForecastBoard = styled.div<ForecastBoardProps>`
   ${props =>
     props.loadingBoard &&
     css`
+      justify-content: center;
       svg {
         align-self: center;
-        margin-top: 25%;
         animation: ${rotate} 0.9s linear infinite;
       }
     `}
@@ -125,13 +125,11 @@ export const ErrMessage = styled.div<ErrMessageProps>`
 
 export const WeekDays = styled.div`
   display: flex;
+  justify-content: space-between;
 `;
 
 export const DayBoard = styled.div`
   margin-top: 16px;
-  & + & {
-    margin-left: 24px;
-  }
 
   div:first-child {
     color: #333;
@@ -148,7 +146,7 @@ export const DayBoard = styled.div`
 
 export const LastDayBoard = styled.div`
   margin-top: 16px;
-  margin-left: 24px;
+  min-width: 60px;
 
   div:first-child {
     color: #333;
