@@ -2,6 +2,10 @@
     <img alt="Weather forecast" title="#weather-forecast" src="./readmeassets/englishbanner.png" />
 </h1>
 
+####  Versions of README [Portuguese 🇧🇷 ](./README.md)  | |  [English 🇺🇸](./README-en.md)|
+
+---
+
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/orlando-gomes/weather-forecast?color=%2304D361">
 
@@ -135,8 +139,4 @@ Adapting to Typescript is also a challenge itself. All I can say is that this wa
 
 This project is under the license [MIT](./LICENSE).
 
----
 
-##  Versions of README
-
-[Portuguese 🇧🇷 ](./README.md)  | |  [English 🇺🇸](./README-en.md)|
